@@ -206,6 +206,7 @@
 
 <script>
 import EmployeesApiService from "../../core/services/employees-api.services"
+import axios from "axios";
 
 export default {
   name: "admin-staff",
@@ -242,22 +243,24 @@ export default {
 
     editedIndex: -1,
     editedItem: {
+      id:0,
       name: '',
-      lastname: 0,
+      lastname: '',
       dni: 0,
       age: 0,
-      email: 0,
+      email: '',
       phone: 0,
-      post: 0,
+      post: '',
     },
     defaultItem: {
+      id:0,
       name: '',
-      lastname: 0,
+      lastname: '',
       dni: 0,
       age: 0,
-      email: 0,
+      email: '',
       phone: 0,
-      post: 0,
+      post: '',
     },
 
   }),
@@ -277,10 +280,9 @@ export default {
     },
   },
 
-  created () {
-    this.initialize()
+  mounted() {
+   this.retrieveEmployees();
   },
-
   methods:{
 
     getDisplayEmployees(employees){
@@ -305,186 +307,17 @@ export default {
             console.log(e);
           });
     },
-    initialize () {
-      this.employees = [
-        {
-          "name": "Jose",
-          "lastname": "Cartagena Perez",
-          "dni": 10254861,
-          "age": 38,
-          "email": "catag85@gmail.com",
-          "phone": 956522598,
-          "post": "valet service"
-        },
-        {
-          "name": "Hernando Ernesto",
-          "lastname": "Armengol Belmonte",
-          "dni": 10625198,
-          "age": 37,
-          "email": "henan_er@gmail.com",
-          "phone": 956139653,
-          "post": "valet service"
-        },
-        {
-          "name": "Jeronimo Jenaro",
-          "lastname": "Casanova Merino",
-          "dni": 16542851,
-          "age": 39,
-          "email": "jercas75@gmail.com",
-          "phone": 956666698,
-          "post": "valet service"
-        },
-        {
-          "name": "Reyna Maria",
-          "lastname": "Sáenz Espejo",
-          "dni": 17254861,
-          "age": 33,
-          "email": "reysa_45@gmail.com",
-          "phone": 912654837,
-          "post": "valet service"
-        },
-        {
-          "name": "Octavio Pedro",
-          "lastname": "Escamilla Menendez",
-          "dni": 25546138,
-          "age": 36,
-          "email": "escamilaa_8@gmail.com",
-          "phone": 999998881,
-          "post": "valet service"
-        },
-        {
-          "name": "Seve Lucas",
-          "lastname": "Dominguez Segura",
-          "dni": 22631548,
-          "age": 29,
-          "email": "domin_7@gmail.com",
-          "phone": 966665277,
-          "post": "housekeeping"
-        },
-        {
-          "name": "Belen Noelia",
-          "lastname": "Dominguez Segura",
-          "dni": 22695164,
-          "age": 29,
-          "email": "domin_7@gmail.com",
-          "phone": 944465277,
-          "post": "housekeeping"
-        },
-        {
-          "name": "Tamara Natalia",
-          "lastname": "Viña Teruel",
-          "dni": 65123655,
-          "age": 30,
-          "email": "tamada10@gmail.com",
-          "phone": 945286544,
-          "post": "housekeeping"
-        },
-        {
-          "name": "Amor Pedro",
-          "lastname": "Morales Amo",
-          "dni": 29565164,
-          "age": 29,
-          "email": "romalesap@gmail.com",
-          "phone": 977766222,
-          "post": "housekeeping"
-        },
-        {
-          "name": "Julie Magali",
-          "lastname": "Diego Cordova",
-          "dni": 22695888,
-          "age": 31,
-          "email": "julie23@gmail.com",
-          "phone": 942225277,
-          "post": "housekeeping"
-        },
-        {
-          "name": "Zacarias Luccas",
-          "lastname": "Huguet Benavides",
-          "dni": 35216231,
-          "age": 30,
-          "email": "hugzaca_7@gmail.com",
-          "phone": 944463337,
-          "post": "waiter"
-        },
-        {
-          "name": "Zacarias Alonso",
-          "lastname": "Maldonado Albero",
-          "dni": 35999231,
-          "age": 30,
-          "email": "malzaca_9@gmail.com",
-          "phone": 943366337,
-          "post": "waiter"
-        },
-        {
-          "name": "Gregorio Juan",
-          "lastname": "Samsa Segarra",
-          "dni": 12546231,
-          "age": 33,
-          "email": "gregsam88@gmail.com",
-          "phone": 996652148,
-          "post": "waiter"
-        },
-        {
-          "name": "Fabiana Diana",
-          "lastname": "Flor Carbonell",
-          "dni": 35213311,
-          "age": 30,
-          "email": "flor_31@gmail.com",
-          "phone": 922455688,
-          "post": "waiter"
-        },
-        {
-          "name": "Gilberto Raul",
-          "lastname": "Pozo Slava",
-          "dni": 15695458,
-          "age": 35,
-          "email": "pozo_54@gmail.com",
-          "phone": 912358745,
-          "post": "waiter"
-        },
-        {
-          "name": "Adán Mateo",
-          "lastname": "Marques Saura",
-          "dni": 13554656,
-          "age": 30,
-          "email": "marqueesam@gmail.com",
-          "phone": 944466666,
-          "post": "security guard"
-        },
-        {
-          "name": "Dionisio Percy",
-          "lastname": "Garay Moll",
-          "dni": 13522332,
-          "age": 33,
-          "email": "garay85@gmail.com",
-          "phone": 999665522,
-          "post": "security guard"
-        },
-        {
-          "name": "Jose Manuel",
-          "lastname": "España Llamas",
-          "dni": 33354656,
-          "age": 30,
-          "email": "joseel@gmail.com",
-          "phone": 944466666,
-          "post": "life guard"
-        },
-        {
-          "name": "Bruno Jair",
-          "lastname": "Barberá Vasquez",
-          "dni": 23564656,
-          "age": 30,
-          "email": "barbj@gmail.com",
-          "phone": 941236666,
-          "post": "life guard"
-        }
-      ]
-    },
 
     editItem (item) {
       this.editedIndex = this.employees.indexOf(item)
       this.editedItem = Object.assign({}, item)
       this.dialog = true
+      const auxId = this.editedIndex + 1
+      console.log(auxId)
+      console.log(this.editedIndex)
+      console.log(this.editedItem)
+      console.log(this.editedIndex)
+      console.log(this.editedItem.name)
     },
 
     deleteItem (item) {
@@ -515,17 +348,42 @@ export default {
     },
 
     save () {
-      if (this.editedIndex > -1) {
-        Object.assign(this.employees[this.editedIndex], this.editedItem)
-      } else {
-        this.employees.push(this.editedItem)
-      }
+      let auxId = this.editedIndex + 1;
+      console.log(this.editedIndex)
+      console.log(this.editedItem.name)
+
+
+     axios.put('http://localhost:3000/api/employees/'+auxId, {
+           id: this.editedIndex + 1,
+           name: this.editedItem.name,
+           lastname: this.editedItem.dni,
+           dni: this.editedItem.dni,
+           age: this.editedItem.age,
+           email: this.editedItem.email,
+           phone: this.editedItem.phone,
+           post: this.editedItem.post
+         }
+     )
+      this.retrieveEmployees()
       this.close()
+
+     /*
+      EmployeesApiService.update(
+           auxId, {
+           id: this.editedIndex + 1,
+           name: this.editedItem.name,
+           lastname: this.editedItem.dni,
+           dni: this.editedItem.dni,
+           age: this.editedItem.age,
+           email: this.editedItem.email,
+           phone: this.editedItem.phone,
+           post: this.editedItem.post
+          }
+      )
+      this.close()*/
     },
   },
-  mounted() {
-    this.retrieveRooms();
-  }
+
 }
 </script>
 

@@ -1,398 +1,390 @@
 {
   "rooms": [
     {
-      "room" : 101,
-      "available": false ,
-      "client" : "Jacinto Taboada",
-      "phone" : 919133825,
-      "date_in" : "24/09/2021",
-      "date_out" : "25/09/2021",
-      "mont S/." : 840.00
-    },
-    {
-      "room" : 102,
-      "available": false ,
-      "client" : "Ramon Aznar",
-      "phone" : 938589708,
-      "date_in" : "24/09/2021",
-      "date_out" : "29/09/2021",
-      "mont S/." : 1930.00
-    },
-
-    {
-      "room" : 201,
-      "available": false ,
-      "client" : "Josue Cartagena",
-      "phone" : 992010047,
-      "date_in" : "15/03/2021",
-      "date_out" : "18/03/2021",
-      "mont S/." : 560.00
-    },
-    {
-      "room" : 202,
-      "available": false ,
-      "client" : "Andres Quipas",
-      "phone" : 984325866,
-      "date_in" : "15/03/2021",
-      "date_out" : "18/03/2021",
-      "mont S/." : 600.00
-    },
-    {
-      "room" : 203,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
-    },
-    {
-      "room" : 204,
-      "available": false ,
-      "client" : "Daniela Mora",
-      "phone" : 956189229,
-      "date_in" : "24/09/2021",
-      "date_out" : "30/09/2021",
-      "mont S/." : 800.00
-    },
-    {
-      "room" : 205,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
-    },
-    {
-      "room" : 206,
-      "available": false ,
-      "client" : "Elsa Guardiola",
-      "phone" : 958755035,
-      "date_in" : "15/09/2021",
-      "date_out" : "18/09/2021",
-      "mont S/." : 1770.00
-    },
-
-    {
-      "room" : 301,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
-    },
-    {
-      "room" : 302,
-      "available": false ,
-      "client" : "Celso Piqueras",
-      "phone" : 981567433,
-      "date_in" : "25/09/2021",
-      "date_out" : "28/09/2021",
-      "mont S/." : 1250.00
-    },
-    {
-      "room" : 303,
-      "available": false ,
-      "client" : "Maria Ferre",
-      "phone" : 997656690,
-      "date_in" : "28/29/2021",
-      "date_out" : "05/29/2021",
-      "mont S/." : 1600.00
-    },
-    {
-      "room" : 304,
+      "room": 101,
       "available": false,
-      "client" : "Georgina Barrios",
-      "phone" : 943394093,
-      "date_in" : "26/09/2021",
-      "date_out" : "03/10/2021",
-      "mont S/." : 1970.00
+      "client": "Jacinto Taboada",
+      "phone": 919133825,
+      "date_in": "24/09/2021",
+      "date_out": "25/09/2021",
+      "mont S/.": 840
     },
     {
-      "room" : 305,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
+      "room": 102,
+      "available": false,
+      "client": "Ramon Aznar",
+      "phone": 938589708,
+      "date_in": "24/09/2021",
+      "date_out": "29/09/2021",
+      "mont S/.": 1930
     },
     {
-      "room" : 306,
-      "available": false ,
-      "client" : "Tulio Triviño",
-      "phone" : 965324851,
-      "date_in" : "26/09/2021",
-      "date_out" : "03/09/2021",
-      "mont S/." : 1490.00
-    },
-
-    {
-      "room" : 401,
-      "available": false ,
-      "client" : "Jeremy Torres",
-      "phone" : 966985585,
-      "date_in" : "26/09/2021",
-      "date_out" : "28/09/2021",
-      "mont S/." : 990.00
+      "room": 201,
+      "available": false,
+      "client": "Josue Cartagena",
+      "phone": 992010047,
+      "date_in": "15/03/2021",
+      "date_out": "18/03/2021",
+      "mont S/.": 560
     },
     {
-      "room" : 402,
-      "available": false ,
-      "client" : "Bryan Pintor ",
-      "phone" : 965325585,
-      "date_in" : "27/09/2021",
-      "date_out" : "27/09/2021",
-      "mont S/." : 780.00
+      "room": 202,
+      "available": false,
+      "client": "Andres Quipas",
+      "phone": 984325866,
+      "date_in": "15/03/2021",
+      "date_out": "18/03/2021",
+      "mont S/.": 600
     },
     {
-      "room" : 403,
-      "available": false ,
-      "client" : "Magali Espinoza ",
-      "phone" : 978524655,
-      "date_in" : "27/09/2021",
-      "date_out" : "30/09/2021",
-      "mont S/." : 1760.00
+      "room": 203,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
     },
     {
-      "room" : 404,
-      "available": false ,
-      "client" : "Edward Alburqueque",
-      "phone" : 988888526,
-      "date_in" : "25/09/2021",
-      "date_out" : "25/09/2021",
-      "mont S/." : 500.00
+      "room": 204,
+      "available": false,
+      "client": "Daniela Mora",
+      "phone": 956189229,
+      "date_in": "24/09/2021",
+      "date_out": "30/09/2021",
+      "mont S/.": 800
     },
     {
-      "room" : 405,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
+      "room": 205,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
     },
     {
-      "room" : 406,
-      "available": false ,
-      "client" : "Junior William",
-      "phone" : 920165255,
-      "date_in" : "26/09/2021",
-      "date_out" : "02/10/2021",
-      "mont S/." : 1800.00
-    },
-
-    {
-      "room" : 501,
-      "available": false ,
-      "client" : "Ricardo Fernandez",
-      "phone" : 965423165,
-      "date_in" : "02/10/2021",
-      "date_out" : "06/10/2021",
-      "mont S/." : 1590.00
+      "room": 206,
+      "available": false,
+      "client": "Elsa Guardiola",
+      "phone": 958755035,
+      "date_in": "15/09/2021",
+      "date_out": "18/09/2021",
+      "mont S/.": 1770
     },
     {
-      "room" : 502,
-      "available": false ,
-      "client" : "Yajahira Canchari",
-      "phone" : 954216875,
-      "date_in" : "24/09/2021",
-      "date_out" : "29/09/2021",
-      "mont S/." : 1200.00
+      "room": 301,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
     },
     {
-      "room" : 503,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
+      "room": 302,
+      "available": false,
+      "client": "Celso Piqueras",
+      "phone": 981567433,
+      "date_in": "25/09/2021",
+      "date_out": "28/09/2021",
+      "mont S/.": 1250
     },
     {
-      "room" : 504,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
+      "room": 303,
+      "available": false,
+      "client": "Maria Ferre",
+      "phone": 997656690,
+      "date_in": "28/29/2021",
+      "date_out": "05/29/2021",
+      "mont S/.": 1600
     },
     {
-      "room" : 505,
-      "available": false ,
-      "client" : "Victoria Espinoza",
-      "phone" : 924586831,
-      "date_in" : "03/10/2021",
-      "date_out" : "06/10/2021",
-      "mont S/." : 1480.00
+      "room": 304,
+      "available": false,
+      "client": "Georgina Barrios",
+      "phone": 943394093,
+      "date_in": "26/09/2021",
+      "date_out": "03/10/2021",
+      "mont S/.": 1970
     },
     {
-      "room" : 505,
-      "available": false ,
-      "client" : "Victoria Espinoza",
-      "phone" : 924586831,
-      "date_in" : "01/10/2021",
-      "date_out" : "02/10/2021",
-      "mont S/." : 450.00
+      "room": 305,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
     },
     {
-      "room" : 506,
-      "available": false ,
-      "client" : "Noelia Ruiz",
-      "phone" : 965227853,
-      "date_in" : "03/10/2021",
-      "date_out" : "07/10/2021",
-      "mont S/." : 1370.00
-    },
-
-    {
-      "room" : 601,
-      "available": false ,
-      "client" : "Carlos Sanchez",
-      "phone" : 965159874,
-      "date_in" : "27/09/2021",
-      "date_out" : "02/10/2021",
-      "mont S/." : 1850.00
+      "room": 306,
+      "available": false,
+      "client": "Tulio Triviño",
+      "phone": 965324851,
+      "date_in": "26/09/2021",
+      "date_out": "03/09/2021",
+      "mont S/.": 1490
     },
     {
-      "room" : 602,
-      "available": false ,
-      "client" : "Cristopher Solis",
-      "phone" : 998756984,
-      "date_in" : "15/10/2021",
-      "date_out" : "16/102021",
-      "mont S/." : 900.00
+      "room": 401,
+      "available": false,
+      "client": "Jeremy Torres",
+      "phone": 966985585,
+      "date_in": "26/09/2021",
+      "date_out": "28/09/2021",
+      "mont S/.": 990
     },
     {
-      "room" : 603,
-      "available": false ,
-      "client" : "Hilary Cerca",
-      "phone" : 925625585,
-      "date_in" : "24/09/2021",
-      "date_out" : "24/09/2021",
-      "mont S/." : 600.00
+      "room": 402,
+      "available": false,
+      "client": "Bryan Pintor ",
+      "phone": 965325585,
+      "date_in": "27/09/2021",
+      "date_out": "27/09/2021",
+      "mont S/.": 780
     },
     {
-      "room" : 604,
-      "available": false ,
-      "client" : "Pablo Mesa",
-      "phone" : 965336575,
-      "date_in" : "05/10/2021",
-      "date_out" : "07/10/2021",
-      "mont S/." : 850.00
+      "room": 403,
+      "available": false,
+      "client": "Magali Espinoza ",
+      "phone": 978524655,
+      "date_in": "27/09/2021",
+      "date_out": "30/09/2021",
+      "mont S/.": 1760
     },
     {
-      "room" : 605,
-      "available": false ,
-      "client" : "Victor Espinoza",
-      "phone" : 925485585,
-      "date_in" : "26/09/2021",
-      "date_out" : "30/09/2021",
-      "mont S/." : 1300.00
+      "room": 404,
+      "available": false,
+      "client": "Edward Alburqueque",
+      "phone": 988888526,
+      "date_in": "25/09/2021",
+      "date_out": "25/09/2021",
+      "mont S/.": 500
     },
     {
-      "room" : 606,
-      "available": true ,
-      "client" : "-------------",
-      "phone" : "---------",
-      "date_in" : "--/--/----",
-      "date_out" : "--/--/----",
-      "mont S/." : 0.00
+      "room": 405,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
+    },
+    {
+      "room": 406,
+      "available": false,
+      "client": "Junior William",
+      "phone": 920165255,
+      "date_in": "26/09/2021",
+      "date_out": "02/10/2021",
+      "mont S/.": 1800
+    },
+    {
+      "room": 501,
+      "available": false,
+      "client": "Ricardo Fernandez",
+      "phone": 965423165,
+      "date_in": "02/10/2021",
+      "date_out": "06/10/2021",
+      "mont S/.": 1590
+    },
+    {
+      "room": 502,
+      "available": false,
+      "client": "Yajahira Canchari",
+      "phone": 954216875,
+      "date_in": "24/09/2021",
+      "date_out": "29/09/2021",
+      "mont S/.": 1200
+    },
+    {
+      "room": 503,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
+    },
+    {
+      "room": 504,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
+    },
+    {
+      "room": 505,
+      "available": false,
+      "client": "Victoria Espinoza",
+      "phone": 924586831,
+      "date_in": "03/10/2021",
+      "date_out": "06/10/2021",
+      "mont S/.": 1480
+    },
+    {
+      "room": 505,
+      "available": false,
+      "client": "Victoria Espinoza",
+      "phone": 924586831,
+      "date_in": "01/10/2021",
+      "date_out": "02/10/2021",
+      "mont S/.": 450
+    },
+    {
+      "room": 506,
+      "available": false,
+      "client": "Noelia Ruiz",
+      "phone": 965227853,
+      "date_in": "03/10/2021",
+      "date_out": "07/10/2021",
+      "mont S/.": 1370
+    },
+    {
+      "room": 601,
+      "available": false,
+      "client": "Carlos Sanchez",
+      "phone": 965159874,
+      "date_in": "27/09/2021",
+      "date_out": "02/10/2021",
+      "mont S/.": 1850
+    },
+    {
+      "room": 602,
+      "available": false,
+      "client": "Cristopher Solis",
+      "phone": 998756984,
+      "date_in": "15/10/2021",
+      "date_out": "16/102021",
+      "mont S/.": 900
+    },
+    {
+      "room": 603,
+      "available": false,
+      "client": "Hilary Cerca",
+      "phone": 925625585,
+      "date_in": "24/09/2021",
+      "date_out": "24/09/2021",
+      "mont S/.": 600
+    },
+    {
+      "room": 604,
+      "available": false,
+      "client": "Pablo Mesa",
+      "phone": 965336575,
+      "date_in": "05/10/2021",
+      "date_out": "07/10/2021",
+      "mont S/.": 850
+    },
+    {
+      "room": 605,
+      "available": false,
+      "client": "Victor Espinoza",
+      "phone": 925485585,
+      "date_in": "26/09/2021",
+      "date_out": "30/09/2021",
+      "mont S/.": 1300
+    },
+    {
+      "room": 606,
+      "available": true,
+      "client": "-------------",
+      "phone": "---------",
+      "date_in": "--/--/----",
+      "date_out": "--/--/----",
+      "mont S/.": 0
     }
   ],
-
   "inventories": [
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 10,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 11,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 11,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 12,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 12,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 13,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 13,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 14,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 15,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 16,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 17,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 18,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 19,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 20,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     },
     {
-      "id" : 10,
-      "name": "Pringles" ,
-      "stock" : 54,
-      "mont/unit" : 9.90,
-      "supplier" : "Pringles"
+      "id": 21,
+      "name": "Pringles",
+      "stock": 54,
+      "mont/unit": 9.9,
+      "supplier": "Pringles"
     }
   ],
-
   "clients": [
-
     {
       "name": "Jacinto Miguel",
       "lastname": "Taboada Kuro",
@@ -601,7 +593,6 @@
       "room": 605
     }
   ],
-
   "hotels": [
     {
       "name": "Holiday Inn Lima Miraflores",
@@ -663,13 +654,12 @@
       "description": "Hotel que cuenta con internet vía Wi-Fi gratuito en todas las instalaciones, así con un gazebo con 8 hamacas y una sala de estar. Estacionamiento dentro de las instalaciones. Área de fogatas y de barbacoa.",
       "city": "Piura"
     }
-
   ],
-
   "employees": [
     {
-      "name": "Jose",
-      "lastname": "Cartagena Perez",
+      "id": 1,
+      "name": "Jose Maria",
+      "lastname": 10254861,
       "dni": 10254861,
       "age": 38,
       "email": "catag85@gmail.com",
@@ -677,6 +667,7 @@
       "post": "valet service"
     },
     {
+      "id": 2,
       "name": "Hernando Ernesto",
       "lastname": "Armengol Belmonte",
       "dni": 10625198,
@@ -686,6 +677,7 @@
       "post": "valet service"
     },
     {
+      "id": 3,
       "name": "Jeronimo Jenaro",
       "lastname": "Casanova Merino",
       "dni": 16542851,
@@ -695,6 +687,7 @@
       "post": "valet service"
     },
     {
+      "id": 4,
       "name": "Reyna Maria",
       "lastname": "Sáenz Espejo",
       "dni": 17254861,
@@ -704,6 +697,7 @@
       "post": "valet service"
     },
     {
+      "id": 5,
       "name": "Octavio Pedro",
       "lastname": "Escamilla Menendez",
       "dni": 25546138,
@@ -713,6 +707,7 @@
       "post": "valet service"
     },
     {
+      "id": 6,
       "name": "Seve Lucas",
       "lastname": "Dominguez Segura",
       "dni": 22631548,
@@ -722,6 +717,7 @@
       "post": "housekeeping"
     },
     {
+      "id": 7,
       "name": "Belen Noelia",
       "lastname": "Dominguez Segura",
       "dni": 22695164,
@@ -731,6 +727,7 @@
       "post": "housekeeping"
     },
     {
+      "id": 8,
       "name": "Tamara Natalia",
       "lastname": "Viña Teruel",
       "dni": 65123655,
@@ -740,6 +737,7 @@
       "post": "housekeeping"
     },
     {
+      "id": 9,
       "name": "Amor Pedro",
       "lastname": "Morales Amo",
       "dni": 29565164,
@@ -749,6 +747,7 @@
       "post": "housekeeping"
     },
     {
+      "id": 10,
       "name": "Julie Magali",
       "lastname": "Diego Cordova",
       "dni": 22695888,
@@ -758,6 +757,7 @@
       "post": "housekeeping"
     },
     {
+      "id": 11,
       "name": "Zacarias Luccas",
       "lastname": "Huguet Benavides",
       "dni": 35216231,
@@ -767,6 +767,7 @@
       "post": "waiter"
     },
     {
+      "id": 12,
       "name": "Zacarias Alonso",
       "lastname": "Maldonado Albero",
       "dni": 35999231,
@@ -776,6 +777,7 @@
       "post": "waiter"
     },
     {
+      "id": 13,
       "name": "Gregorio Juan",
       "lastname": "Samsa Segarra",
       "dni": 12546231,
@@ -785,6 +787,7 @@
       "post": "waiter"
     },
     {
+      "id": 14,
       "name": "Fabiana Diana",
       "lastname": "Flor Carbonell",
       "dni": 35213311,
@@ -794,6 +797,7 @@
       "post": "waiter"
     },
     {
+      "id": 15,
       "name": "Gilberto Raul",
       "lastname": "Pozo Slava",
       "dni": 15695458,
@@ -803,6 +807,7 @@
       "post": "waiter"
     },
     {
+      "id": 17,
       "name": "Adán Mateo",
       "lastname": "Marques Saura",
       "dni": 13554656,
@@ -812,6 +817,7 @@
       "post": "security guard"
     },
     {
+      "id": 18,
       "name": "Dionisio Percy",
       "lastname": "Garay Moll",
       "dni": 13522332,
@@ -821,6 +827,7 @@
       "post": "security guard"
     },
     {
+      "id": 19,
       "name": "Jose Manuel",
       "lastname": "España Llamas",
       "dni": 33354656,
@@ -830,6 +837,7 @@
       "post": "life guard"
     },
     {
+      "id": 20,
       "name": "Bruno Jair",
       "lastname": "Barberá Vasquez",
       "dni": 23564656,
@@ -838,8 +846,7 @@
       "phone": 941236666,
       "post": "life guard"
     }
-  ]
-,
+  ],
   "foods": {
     "id": 1,
     "name": "Tomato",
@@ -847,13 +854,12 @@
     "proteins": 15,
     "carb": 15
   },
-
   "recipes": {
     "id": 1,
     "name": "Fruit Salad",
-    "ingredient_1":"banana, ",
-    "ingredient_2":"banana, apple, ....",
-    "ingredient_3":"banana, apple, ....",
+    "ingredient_1": "banana, ",
+    "ingredient_2": "banana, apple, ....",
+    "ingredient_3": "banana, apple, ....",
     "preparation": "Cut the fruits and then .....",
     "calories": 50
   }
