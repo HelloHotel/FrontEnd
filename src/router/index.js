@@ -68,6 +68,12 @@ const routes = [
     component: () => import('../components/administrator/admin-costs')
   },
   {
+    path: '/admin-cost_rooms/:id',
+    name: 'admin-cost_rooms',
+    component: () => import('../components/administrator/admin-cost_rooms'),
+    props: true
+  },
+  {
     path: '/admin-feedback',
     name: 'admin-feedback',
     component: () => import('../components/administrator/admin-feedback')

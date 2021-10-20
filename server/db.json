@@ -862,5 +862,56 @@
     "ingredient_3": "banana, apple, ....",
     "preparation": "Cut the fruits and then .....",
     "calories": 50
-  }
+  },
+  "stairs":[
+    {
+      "id": 1,
+      "stair": 1,
+      "cost": 3870.50,
+      "rooms": 2
+    },
+    {
+      "id": 2,
+      "stair": 2,
+      "cost": 8347.00,
+      "rooms": 6
+    },
+    {
+      "id": 3,
+      "stair": 1,
+      "cost": 2452.50,
+      "rooms": 6
+    },
+    {
+      "id": 4,
+      "stair": 1,
+      "cost": 2452.50,
+      "rooms": 6
+    },
+    {
+      "id": 5,
+      "stair": 1,
+      "cost": 2452.50,
+      "rooms": 6
+    },
+    {
+      "id": 6,
+      "stair": 1,
+      "cost": 2452.50,
+      "rooms": 6
+    },
+    {
+      "id": 7,
+      "stair": 1,
+      "cost": 2452.50,
+      "rooms": 6
+    }
+  ],
+  "costRooms": [
+    {
+      "id": 1,
+      "room": 101,
+      "cost": 800
+    }
+  ]
 }
