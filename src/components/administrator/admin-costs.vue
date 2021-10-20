@@ -45,8 +45,44 @@
     </v-app-bar>
     <!-- Main-->
     <h1>Costs</h1>
-    <h2>commit</h2>
+    <v-divider></v-divider>
 
+    <v-layout wrap>
+      <v-col md="4"
+             v-for="stair in stairs"
+             :key="stair.id"
+      >
+        <v-card class="mx-auto"
+        >
+          <v-list-item three-line>
+            <v-list-item-content>
+              <v-card-title class="text-h5">
+                Floor {{stair.id}}
+              </v-card-title>
+              <v-divider></v-divider>
+              <v-card-subtitle class="text-h6">Rooms: {{stair.rooms}}</v-card-subtitle>
+              <v-card-subtitle class="text-h6">Cost: S/. {{stair.cost}}0</v-card-subtitle>
+            </v-list-item-content>
+
+            <v-list-item-avatar
+                tile
+                size="120"
+            >
+              <v-img
+                  src="@/assets/img/stairs.png"></v-img>
+            </v-list-item-avatar>
+          </v-list-item>
+          <v-card-actions class="blue">
+            <v-spacer></v-spacer>
+            <v-btn outlined rounded color="white"
+                   :to="{ name: 'admin-cost_rooms', params: { id: stair.id } }"
+            >
+              See
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-layout>
   </v-app>
 </template>
 
@@ -67,7 +103,20 @@ export default {
       { title: 'Publicity', color: 'rgba(63, 103, 250, 0.3)', src: require('@/assets/img/publicity.jpeg'), path: '/admin-publicity' },
     ],
     drawer: null,
+    stairs: [],
+    msg: 2
   }),
+
+  created () {
+    fetch("http://localhost:3000/stairs")
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          this.stairs = data;
+        })
+  },
+
 }
 </script>
 
