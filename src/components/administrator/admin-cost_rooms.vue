@@ -49,22 +49,34 @@
     <h1>Floor {{ id }}</h1>
     <v-divider></v-divider>
 
-    <div v-if=" id === 1">
-      Now you see me
-    </div>
-    <div v-else>
-      Now you don't
-    </div>
+    <v-layout wrap>
+      <v-col md="4"
+             v-for="room in rooms"
+             :key="room.id"
+      >
+        <v-card class="mx-auto"
+        >
+          <div v-if="room.floor === id">
+          <v-list-item three-line>
+            <v-list-item-content>
 
-    <div v-for="todo in todos" :key="todo.room">
-      <div v-if="todo.floor === id">
-        {{ todo }}
-      </div>
+              <v-card-subtitle class="text-h6">Rooms: {{room.room}} | Cost: S/. {{room.cost}}0</v-card-subtitle>
+              <v-card-subtitle class="text-h6">Since: 01/01/2021</v-card-subtitle>
 
-    </div>
-  
-
-
+            </v-list-item-content>
+          </v-list-item>
+          <v-card-actions class="blue">
+            <v-spacer></v-spacer>
+            <v-btn outlined rounded color="white"
+                   :to="{ name: '', params: { id: room.id } }"
+            >
+              See
+            </v-btn>
+          </v-card-actions>
+          </div>
+        </v-card>
+      </v-col>
+    </v-layout>
   </v-app>
 </template>
 
@@ -86,24 +98,28 @@ export default {
       { title: 'Feedback', color: 'rgba(63, 103, 250, 0.3)', src: require('@/assets/img/feedback.jpg'), path: '/admin-feedback' },
       { title: 'Publicity', color: 'rgba(63, 103, 250, 0.3)', src: require('@/assets/img/publicity.jpeg'), path: '/admin-publicity' },
     ],
-    todos: [
-      { floor: 1, room: 202, monto: 45, ejemplo: 'oooopp'},
-      { floor: 1, room: 204, monto: 78, ejemplo: 'ññl'},
-      { floor: 2 ,room: 100, monto: 224, ejemplo: 'iuu'},
-      { floor: 2 ,room: 200, monto: 874, ejemplo: 'iuu'},
-      { floor: 3 ,room: 300, monto: 21, ejemplo: 'iuu'}
-    ],
+
     drawer: null,
     id: 0,
+    rooms: [],
+    roomsId: [],
+
 
   }),
   created() {
     this.id = this.$route.params.id;
+    fetch("http://localhost:3000/costRooms")
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          this.rooms = data;
+        })
   },
   methods: {
     navigate() {
       router.go(-1);
-    }
+    },
   }
 }
 </script>
