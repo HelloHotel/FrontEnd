@@ -6,7 +6,7 @@
         <!--<span class="display-1">Hello Hotel</span>-->
         <v-img max-height="50"
                max-width="50"
-               src="./assets/HelloHotel.png"></v-img>
+               src="@/assets/HelloHotel.png"></v-img>
       </v-app-bar-title>
       <v-btn plain to="/home" color="green" class="display-1">Hello Hotel</v-btn>
       <v-spacer></v-spacer>

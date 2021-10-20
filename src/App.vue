@@ -19,7 +19,10 @@
 </template>
 
 <script>
+
 export default {
+  name: 'App',
+
   data: () => ({
     model: 0,
     cards: [
@@ -28,8 +31,5 @@ export default {
       { title: 'Estancia, control de salidas. Asimismo facilita la gestion de los hoteles!', src: require('@/assets/hoteles3.jpg')},
     ],
   }),
-}
+};
 </script>
-
-<style>
-</style>
