@@ -104,7 +104,6 @@ export default {
     ],
     drawer: null,
     stairs: [],
-    msg: 2
   }),
 
   created () {
