@@ -1104,5 +1104,71 @@
       "room": 706,
       "cost": 800
     }
+  ],
+    "events": [
+    {
+      "id": 1,
+      "name": "Chef",
+      "details": "Cook in main restaurant",
+      "start":"2021-09-28",
+      "end": "2021-10-1",
+      "color": "#1976D2",
+      "timed": 1000
+    },
+    {
+      "id": 2,
+      "name": "Guard",
+      "details": "Guard near Restaurant",
+      "start":"2021-10-1",
+      "end": "2021-10-10",
+      "color": "#1976D2",
+      "timed": 1000
+    },
+    {
+      "id": 3,
+      "name": "Waiters",
+      "details": "Waiters in Main Restaurant",
+      "start": "2021-10 -1",
+      "end": "2021-10-10",
+      "color": "#49E10F",
+      "timed": 1000
+    },
+    {
+      "id": 4,
+      "name": "Menu",
+      "details": "Make menu in main restaurant",
+      "start":"2021-10-19",
+      "end": "2021-10-24",
+      "color": "#CF299A",
+      "timed": 1000
+    },
+    {
+      "id": 5,
+      "name": "Guard",
+      "details": "Guard near in hotel",
+      "start":"2021-10-1",
+      "end": "2021-10-10",
+      "color": "#5E29AF",
+      "timed": 1000
+    },
+    {
+      "id": 6,
+      "name": "Waiter",
+      "details": "room service",
+      "start":"2021-10-19",
+      "end": "2021-10-22",
+      "color": "#4CD1A6",
+      "timed": 1000
+    },
+    {
+      "id": 7,
+      "name": "Chef",
+      "details": "Cook in main restaurant",
+      "start":"2021-10-25",
+      "end": "2021-10-30",
+      "color": "#DAD318",
+      "timed": 1000
+    }
+
   ]
 }
