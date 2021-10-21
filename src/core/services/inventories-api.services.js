@@ -4,8 +4,10 @@ class InventoriesApiService {
     getAll(){
         return http.get("/inventories");
     }
+
     getById(id){
         return http.get(`/inventories/${id}`);
+
     }
     create(data){
         return http.post("/inventories", data);

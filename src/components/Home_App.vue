@@ -239,40 +239,7 @@
                   </v-img>
                 </v-card>
               </v-col>
-              <v-col md="3">
-                <v-card
-                    height="350"
-                    outlined color="transparent" rounded
-                >
-                  <v-card-text class="blue--text text-center">Software Engineer</v-card-text>
-                  <v-card-text class="white--text text-center">Eduardo Flores</v-card-text>
-                  <v-img
-                      class="mx-auto"
-                      src="@/assets/team/Eduardo.jpeg"
-                      contain
-                      max-height="200px"
-                      max-width="300px"
-                  >
-                  </v-img>
-                </v-card>
-              </v-col>
-              <v-col md="3">
-                <v-card
-                    height="350"
-                    outlined color="transparent" rounded
-                >
-                  <v-card-text class="blue--text text-center">Software Engineer</v-card-text>
-                  <v-card-text class="white--text text-center">Jean Briceno</v-card-text>
-                  <v-img
-                      class="mx-auto"
-                      src="@/assets/team/jean.jpg"
-                      contain
-                      max-height="200px"
-                      max-width="300px"
-                  >
-                  </v-img>
-                </v-card>
-              </v-col>
+
             </v-layout>
           </v-card>
 

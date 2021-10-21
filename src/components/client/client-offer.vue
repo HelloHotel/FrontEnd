@@ -46,7 +46,7 @@
       <v-layout v-for="hotel in hotels"
                 :key="hotel.city"
                 row>
-        <v-col md="3">
+        <v-col md="4">
           <v-card
               class="mx-auto"
               max-width="400"
@@ -96,39 +96,7 @@
           </v-card>
         </v-col>
         <v-divider vertical></v-divider>
-
         <v-col md="3">
-          <v-card height="500"
-                  width="400"
-          >
-            <v-card-title>Client Information</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-form>
-                <v-text-field label="Name"
-                              prepend-icon="mdi-account">
-                </v-text-field>
-                <v-text-field label="Last name"
-                              prepend-icon="mdi-account">
-                </v-text-field>
-                <v-text-field label="D.N.I"
-                              prepend-icon="mdi-card-account-details-outline">
-                </v-text-field>
-                <v-text-field label="Phone"
-                              prepend-icon="mdi-phone">
-                </v-text-field>
-                <v-text-field label="E-mail"
-                              prepend-icon="mdi-mail">
-                </v-text-field>
-                <v-text-field label="Age"
-                              prepend-icon="mdi-account">
-                </v-text-field>
-              </v-form>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-divider class="mx-2" inset vertical></v-divider>
-        <v-col md="2">
           <v-card height="500"
                   width="400"
           >
@@ -137,12 +105,12 @@
             <v-card-text>
               <v-form>
                 <v-select append-icon="mdi-bed"
-                          label="Beds"
+                          label="Select Number of Beds"
                           :items="beds"
                           item-text="name"
                 ></v-select>
                 <v-select append-icon="mdi-bed-king"
-                          label="Room"
+                          label="Select Number of rooms"
                           :items="rooms"
                           item-text="name"
                 ></v-select>
@@ -199,7 +167,7 @@
           </v-card>
         </v-col>
         <v-divider inset vertical></v-divider>
-        <v-col md="3">
+        <v-col md="4">
           <v-card height="500"
                   width="400"
           >
