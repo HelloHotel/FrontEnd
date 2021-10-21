@@ -1,7 +1,8 @@
 <template>
   <v-app>
-    <v-navigation-drawer app v-model="drawer" clipped permanent>
+    <v-navigation-drawer app clipped permanent>
       <!-- Format for the card of every btn/picture-->
+
       <v-layout wrap>
         <v-col
             v-for="card in cards"
@@ -52,6 +53,9 @@
             <v-toolbar
                 flat
             >
+              <v-btn color="primary" dark @click.stop="dialog = true">
+                New Event
+              </v-btn>
               <v-btn
                   outlined
                   class="mr-4"
@@ -120,6 +124,39 @@
               </v-menu>
             </v-toolbar>
           </v-sheet>
+          <v-dialog v-model="dialog" max-width="500">
+            <v-card>
+              <v-container>
+                <v-form @submit.prevent="addEvent">
+                  <v-text-field v-model="name" type="text" label="event name (required)"></v-text-field>
+                  <v-text-field v-model="details" type="text" label="detail"></v-text-field>
+                  <v-text-field v-model="start" type="date" label="start (required)"></v-text-field>
+                  <v-text-field v-model="end" type="date" label="end (required)"></v-text-field>
+                  <v-text-field v-model="color" type="color" label="color (click to open color menu)"></v-text-field>
+                  <v-btn type="submit" color="primary" class="mr-4" @click.stop="dialog = false">
+                    create event
+                  </v-btn>
+                </v-form>
+              </v-container>
+            </v-card>
+          </v-dialog>
+
+          <v-dialog v-model="dialogDate" max-width="500">
+            <v-card>
+              <v-container>
+                <v-form @submit.prevent="addEvent">
+                  <v-text-field v-model="name" type="text" label="event name (required)"></v-text-field>
+                  <v-text-field v-model="details" type="text" label="detail"></v-text-field>
+                  <v-text-field v-model="start" type="date" label="start (required)"></v-text-field>
+                  <v-text-field v-model="end" type="date" label="end (required)"></v-text-field>
+                  <v-text-field v-model="color" type="color" label="color (click to open color menu)"></v-text-field>
+                  <v-btn type="submit" color="primary" class="mr-4" @click.stop="dialog = false">
+                    create event
+                  </v-btn>
+                </v-form>
+              </v-container>
+            </v-card>
+          </v-dialog>
           <v-sheet height="600">
             <v-calendar
                 ref="calendar"
@@ -148,20 +185,28 @@
                     :color="selectedEvent.color"
                     dark
                 >
-                  <v-btn icon>
-                    <v-icon>mdi-pencil</v-icon>
+                  <v-btn @click="deleteEvent(selectedEvent.id)" icon>
+                    <v-icon>mdi-delete</v-icon>
                   </v-btn>
                   <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
                   <v-spacer></v-spacer>
-                  <v-btn icon>
-                    <v-icon>mdi-heart</v-icon>
-                  </v-btn>
-                  <v-btn icon>
-                    <v-icon>mdi-dots-vertical</v-icon>
-                  </v-btn>
+
                 </v-toolbar>
                 <v-card-text>
-                  <span v-html="selectedEvent.details"></span>
+                  <form v-if="currentlyEditing !== selectedEvent.id">
+                    {{selectedEvent.details}}
+                  </form>
+                  <form v-else>
+                    <textarea
+                        v-model="selectedEvent.details"
+                        type="text"
+                        style="width: 100%"
+                        :min-heigth="100"
+                        placeholder = "add note"
+                    >
+
+                    </textarea>
+                  </form>
                 </v-card-text>
                 <v-card-actions>
                   <v-btn
@@ -169,8 +214,20 @@
                       color="secondary"
                       @click="selectedOpen = false"
                   >
-                    Cancel
+                    Close
                   </v-btn>
+                  <v-btn
+                      v-if="currentlyEditing !== selectedEvent.id"
+                      @click.prevent="editEvent(selectedEvent)"
+                  >
+                    Edit
+                  </v-btn>
+                  <!--<v-btn
+                       text v-else
+                      @click.prevent="updateEvent(selectedEvent)"
+                  >
+                    Save
+                  </v-btn>-->
                 </v-card-actions>
               </v-card>
             </v-menu>
@@ -185,7 +242,10 @@
 </template>
 
 <script>
+import EventsApiServices from "../../core/services/events-api.services";
+
 export default {
+
   name: "admin-schedule",
 
   data: () => ({
@@ -208,12 +268,21 @@ export default {
       day: 'Day',
       '4day': '4 Days',
     },
+    name:null,
+    details: null,
+    start:null,
+    end:null,
+    color:"#1976D2",
+    dialog:false,
+    dialogDate:false,
+    currentlyEditing:null,
     selectedEvent: {},
     selectedElement: null,
     selectedOpen: false,
     events: [],
+    eventsAux:[],
     colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],
-    names: ['Meeting', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],
+    names: ['Cooking', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],
   }),
   mounted () {
     this.$refs.calendar.checkChange()
@@ -235,6 +304,9 @@ export default {
     next () {
       this.$refs.calendar.next()
     },
+    editEvent(event){
+      this.currentlyEditing = event.id;
+    },
     showEvent ({ nativeEvent, event }) {
       const open = () => {
         this.selectedEvent = event
@@ -251,32 +323,49 @@ export default {
 
       nativeEvent.stopPropagation()
     },
-    updateRange ({ start, end }) {
-      const events = []
-
-      const min = new Date(`${start.date}T00:00:00`)
-      const max = new Date(`${end.date}T23:59:59`)
-      const days = (max.getTime() - min.getTime()) / 86400000
-      const eventCount = this.rnd(days, days + 20)
-
-      for (let i = 0; i < eventCount; i++) {
-        const allDay = this.rnd(0, 3) === 0
-        const firstTimestamp = this.rnd(min.getTime(), max.getTime())
-        const first = new Date(firstTimestamp - (firstTimestamp % 900000))
-        const secondTimestamp = this.rnd(2, allDay ? 288 : 8) * 900000
-        const second = new Date(first.getTime() + secondTimestamp)
-
-        events.push({
-          name: this.names[this.rnd(0, this.names.length - 1)],
-          start: first,
-          end: second,
-          color: this.colors[this.rnd(0, this.colors.length - 1)],
-          timed: !allDay,
-        })
+    getDisplayEvents(events){
+      return{
+        name: events.name,
+        details: events.details,
+        start: events.start,
+        end: events.end
       }
-
-      this.events = events
     },
+    updateRange () {
+
+     EventsApiServices.getAll()
+          .then(response => {
+
+               for (let i = 0; i < response.data.length; i++) {
+                  const name = response.data[i].name;
+                  const details = response.data[i].details;
+                  const start = new Date(response.data[i].start);
+                  const end = new Date(response.data[i].end);
+                  const color = response.data[i].color;
+                  //const timed= response.data[i].timed
+                  this.events.push({
+                    name:name,
+                    details: details,
+                    start:start,
+                    end:end,
+                    timed: true,
+                    color:color
+                  });
+                }
+
+            console.log(this.eventsAux);
+            //console.log( response.data[0]);
+          })
+          .catch(e => {
+            console.log(e);
+          });
+      this.events = this.eventsAux;
+
+      console.log(this.events);
+
+    //  console.log(this.events);
+    },
+
     rnd (a, b) {
       return Math.floor((b - a + 1) * Math.random()) + a
     },
