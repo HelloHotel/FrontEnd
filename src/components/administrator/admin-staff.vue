@@ -356,7 +356,7 @@ export default {
      axios.put('http://localhost:3000/api/employees/'+auxId, {
            id: this.editedIndex + 1,
            name: this.editedItem.name,
-           lastname: this.editedItem.dni,
+           lastname: this.editedItem.lastname,
            dni: this.editedItem.dni,
            age: this.editedItem.age,
            email: this.editedItem.email,
