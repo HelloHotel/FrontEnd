@@ -45,8 +45,8 @@
     </v-app-bar>
     <!-- Main-->
     <h1>Client</h1>
-    <v-col md="6">
-      <v-toolbar flat>
+    <v-col>
+      <v-toolbar flat width="600">
         <v-text-field v-model="title" append-icon="mdi-magnify"
                       label="Name of Client"
                       single-line hide-details

@@ -44,14 +44,12 @@
       </v-app-bar>
     <!-- Main-->
     <h1>Rooms</h1>
-    <v-col md="6">
-      <v-toolbar flat>
+    <v-col>
+      <v-toolbar flat width="600">
         <v-text-field v-model="title" append-icon="mdi-magnify"
                       label="Number of the room"
                       single-line hide-details
         ></v-text-field>
-        <v-divider class="mx-4" inset vertical></v-divider>
-        <v-btn class="white--text" color="rgba(63, 103, 250, 1)">Search</v-btn>
         <v-divider class="mx-2" inset vertical></v-divider>
         <v-btn class="white--text" color="rgba(63, 103, 250, 1)">Available</v-btn>
         <v-divider class="mx-2" inset vertical></v-divider>
@@ -59,7 +57,7 @@
       </v-toolbar>
     </v-col>
     <v-divider></v-divider>
-    <v-col cols="12" sm="12">
+    <v-col>
       <v-data-table :headers="headers" :items="rooms" :search="title" sort-by="room"></v-data-table>
     </v-col>
   </v-app>
