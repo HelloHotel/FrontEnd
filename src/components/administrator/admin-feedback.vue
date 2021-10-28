@@ -45,8 +45,41 @@
     </v-app-bar>
     <!-- Main-->
     <h1>Feedback</h1>
+    <v-divider></v-divider>
 
+    <v-layout wrap>
+      <v-col md="4"
+             v-for="feedback in feedbacks"
+             :key="feedback.id"
+      >
+        <v-card class="mx-auto"
+        >
+          <v-list-item>
+            <v-list-item-avatar size="50">
+              <v-img
+                  alt=""
+                  :src="feedback.photo"
+              ></v-img>
+            </v-list-item-avatar>
 
+            <v-list-item-content>
+              <v-list-item-title> {{feedback.name}} </v-list-item-title>
+            </v-list-item-content>
+
+            <v-row
+                align="center"
+                justify="end"
+            >
+              <span class="subheading mr-2">{{ feedback.stars }}</span>
+              <v-icon class="mr-1" color="yellow"> mdi-star </v-icon>
+            </v-row>
+          </v-list-item>
+          <v-divider inset></v-divider>
+          <v-card-text class="text-h6"> {{feedback.text}} </v-card-text>
+          <v-card-text class="text-h7" align="right"> {{feedback.date}} </v-card-text>
+        </v-card>
+      </v-col>
+    </v-layout>
   </v-app>
 
 </template>
@@ -68,7 +101,28 @@ export default {
       { title: 'Publicity', color: 'rgba(63, 103, 250, 0.3)', src: require('@/assets/img/publicity.jpeg'), path: '/admin-publicity' },
     ],
     drawer: null,
+    feedbacks: [],
+    activities: [],
   }),
+
+  created () {
+    fetch("http://localhost:3000/feedbacks")
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          this.feedbacks = data;
+        })
+
+    fetch("http://localhost:3000/activities")
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          this.activities = data;
+        })
+  },
+
 }
 </script>
 
