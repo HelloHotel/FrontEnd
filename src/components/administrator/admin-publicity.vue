@@ -45,7 +45,23 @@
     </v-app-bar>
     <!-- Main-->
     <h1>Publicity</h1>
+    <v-card class="mx-auto text-h6" max-width="500px" outlined tile>
+      <v-list>
+        <v-list-item>Alonso Chirinos Paredes <br>
+          u201924282@upc.edu.pe</v-list-item>
+        <br>
+        <v-list-item>Miner Lozano<br>
+          u201923809@upc.edu.pe</v-list-item>
+        <br>
+        <v-list-item>Josue Cartagena<br>
+          u201415040@upc.edu.pe</v-list-item>
+      </v-list>
+    </v-card>
+    <div class="icons mx-auto">
+      <v-icon x-large>mdi-facebook</v-icon>
 
+      <v-icon x-large>mdi-twitter</v-icon>
+    </div>
 
   </v-app>
 

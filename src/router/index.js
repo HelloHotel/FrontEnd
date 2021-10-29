@@ -89,6 +89,11 @@ const routes = [
     component: () => import('../components/administrator/admin-schedule')
   },
   {
+    path: '/admin-schedule/:id',
+    name: 'schedule-by-person',
+    component: () => import('../components/administrator/admin-schedule')
+  },
+  {
     path: '/admin-staff',
     name: 'admin-staff',
     component: () => import('../components/administrator/admin-staff')
