@@ -595,64 +595,84 @@
   ],
   "hotels": [
     {
+      "id": 1,
       "name": "Holiday Inn Lima Miraflores",
       "stars": 5,
       "description": "Hotel reconocido internacionalmente, cuenta con habitaciones totalmente equipadas, sala de conferencias, piscinas exteriores e interiores, servicios de limpieza y lavanderia",
-      "city": "Lima"
+      "city": "Lima",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/15/73/15733330.jpeg"
     },
     {
+      "id": 2,
       "name": "Holiday Inn Express Lima San Isidro",
       "stars": 4,
       "description": "Lujoso Hotel con habitaciones cómodas y modernas que le darán el descanso que merece. Utilice nuestro internet WiFi de cortesía y la estación de trabajo con escritorio y silla ergonómica para trabajar.",
-      "city": "Lima"
+      "city": "Lima",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/10/58/10586642_v1.jpeg"
     },
     {
+      "id": 3,
       "name": "Swissôtel Lima",
       "stars": 5,
       "description": "Diseñado pensando en el hombre de negocios o de placer, nuestras habitaciones están decoradas con un elegante estilo y equipadas con acceso a Internet de alta velocidad, y tendra acceso a modernas salas de reunion privadas",
-      "city": "Lima"
+      "city": "Lima",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/10/11/101156_v2.jpeg"
     },
     {
+      "id": 4,
       "name": "Best Western Plus Urban Larco",
       "stars": 3,
       "description": "Hermoso Hotel que cuenta con una hermosa vista del Océano Pacifico, en los alrededores podrá encontrar museos, restaurantes, cafés, cines, salones de belleza, entre otros.",
-      "city": "Piura"
+      "city": "Piura",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/79/91/7991002_v1.jpeg"
     },
     {
+      "id": 5,
       "name": "Manto Hotel Lima - Mgallery By Sofitel",
       "stars": 5,
       "description": "Disfruta del auténtico lujo de recargar energías en el corazón financiero, comercial de Perú, rodeado de zonas verdes, y dar un paseo agradable y seguro hasta los mejores restaurantes de San Isidro y Miraflores. ",
-      "city": "Lima"
+      "city": "Lima",
+      "photo": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/47/91/479178316.jpeg"
     },
     {
+      "id": 6,
       "name": "Jose Antonio Deluxe",
       "stars": 3,
       "description": "Las instalaciones incluyen un restaurante, un bar, servicio de habitaciones, una lavandería, una sala de conferencias y un centro de negocios.",
-      "city": "Arequipa"
+      "city": "Arequipa",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/66/84/6684446_v1.jpeg"
     },
     {
+      "id": 7,
       "name": "Best Western Los Andes de America",
       "stars": 4,
       "description": "Hotel que tiene una singular combinación de infraestructura de hotel moderno y arquitectura colonial, disponen de televisión por cable con mando a distancia, canales de películas, minibar y puertos de datos",
-      "city": "Cuzco"
+      "city": "Cuzco",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/10/29/102983_v4.jpeg"
     },
     {
+      "id": 8,
       "name": "Xima Cusco Hotel",
       "stars": 4,
       "description": "Hotel ecológico ya que cuenta con acabados naturales en construcción, luz natural en corredores, uso de sistema solar para agua caliente e iluminación externa, además servicio de habitación y servicio de lavandería",
-      "city": "Cuzco"
+      "city": "Cuzco",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/10/04/1004427_v10.jpeg"
     },
     {
+      "id": 9,
       "name": "Esplendor Cusco",
       "stars": 4,
       "description": "Hotel con habitaciones decoradas a medida, combinando historia, patrimonio y modernidad, elevando al huésped a una experiencia sensorial única, y un patio histórico con un exclusivo hidromasaje.",
-      "city": "Cuzco"
+      "city": "Cuzco",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/40/42/4042700_v1.jpeg"
     },
     {
+      "id": 10,
       "name": "Punta Pacífico Bungalows",
       "stars": 5,
       "description": "Hotel que cuenta con internet vía Wi-Fi gratuito en todas las instalaciones, así con un gazebo con 8 hamacas y una sala de estar. Estacionamiento dentro de las instalaciones. Área de fogatas y de barbacoa.",
-      "city": "Piura"
+      "city": "Piura",
+      "photo": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/26/85/2685582_v1.jpeg"
     }
   ],
   "employees": [
@@ -863,47 +883,47 @@
     "preparation": "Cut the fruits and then .....",
     "calories": 50
   },
-  "stairs":[
+  "stairs": [
     {
       "id": 1,
       "stair": 1,
-      "cost": 3870.50,
+      "cost": 3870.5,
       "rooms": 2
     },
     {
       "id": 2,
       "stair": 2,
-      "cost": 8347.00,
+      "cost": 8347,
       "rooms": 6
     },
     {
       "id": 3,
       "stair": 1,
-      "cost": 2452.50,
+      "cost": 2452.5,
       "rooms": 6
     },
     {
       "id": 4,
       "stair": 1,
-      "cost": 2452.50,
+      "cost": 2452.5,
       "rooms": 6
     },
     {
       "id": 5,
       "stair": 1,
-      "cost": 2452.50,
+      "cost": 2452.5,
       "rooms": 6
     },
     {
       "id": 6,
       "stair": 1,
-      "cost": 2452.50,
+      "cost": 2452.5,
       "rooms": 6
     },
     {
       "id": 7,
       "stair": 1,
-      "cost": 2452.50,
+      "cost": 2452.5,
       "rooms": 6
     }
   ],
@@ -918,7 +938,6 @@
       "room": 102,
       "cost": 800
     },
-
     {
       "floor": 2,
       "room": 201,
@@ -949,7 +968,6 @@
       "room": 206,
       "cost": 800
     },
-
     {
       "floor": 3,
       "room": 301,
@@ -980,7 +998,6 @@
       "room": 306,
       "cost": 800
     },
-
     {
       "floor": 4,
       "room": 401,
@@ -1011,7 +1028,6 @@
       "room": 406,
       "cost": 800
     },
-
     {
       "floor": 5,
       "room": 501,
@@ -1042,7 +1058,6 @@
       "room": 506,
       "cost": 800
     },
-
     {
       "floor": 6,
       "room": 601,
@@ -1073,7 +1088,6 @@
       "room": 606,
       "cost": 800
     },
-
     {
       "floor": 7,
       "room": 701,
@@ -1105,24 +1119,26 @@
       "cost": 800
     }
   ],
-    "events": [
+  "events": [
     {
       "id": 1,
       "name": "Chef",
       "details": "Cook in main restaurant",
-      "start":"2021-09-28",
+      "start": "2021-09-28",
       "end": "2021-10-1",
       "color": "#1976D2",
-      "timed": 1000
+      "timed": true,
+      "staffId": 4
     },
     {
       "id": 2,
       "name": "Guard",
       "details": "Guard near Restaurant",
-      "start":"2021-10-1",
+      "start": "2021-10-1",
       "end": "2021-10-10",
       "color": "#1976D2",
-      "timed": 1000
+      "timed": true,
+      "staffId": 4
     },
     {
       "id": 3,
@@ -1131,13 +1147,14 @@
       "start": "2021-10 -1",
       "end": "2021-10-10",
       "color": "#49E10F",
-      "timed": 1000
+      "timed": 1000,
+      "staffId": 4
     },
     {
       "id": 4,
       "name": "Menu",
       "details": "Make menu in main restaurant",
-      "start":"2021-10-19",
+      "start": "2021-10-19",
       "end": "2021-10-24",
       "color": "#CF299A",
       "timed": 1000
@@ -1146,7 +1163,7 @@
       "id": 5,
       "name": "Guard",
       "details": "Guard near in hotel",
-      "start":"2021-10-1",
+      "start": "2021-10-1",
       "end": "2021-10-10",
       "color": "#5E29AF",
       "timed": 1000
@@ -1155,7 +1172,7 @@
       "id": 6,
       "name": "Waiter",
       "details": "room service",
-      "start":"2021-10-19",
+      "start": "2021-10-19",
       "end": "2021-10-22",
       "color": "#4CD1A6",
       "timed": 1000
@@ -1164,11 +1181,142 @@
       "id": 7,
       "name": "Chef",
       "details": "Cook in main restaurant",
-      "start":"2021-10-25",
+      "start": "2021-10-25",
       "end": "2021-10-30",
       "color": "#DAD318",
       "timed": 1000
     }
 
+  ],
+  "feedbacks": [
+    {
+      "id": 1,
+      "name": "Andres Quipas",
+      "text": "Excelente serivicio",
+      "stars": 5,
+      "date": "21/12/2021",
+      "photo": "https://randommanagement.com.au/wp-content/uploads/2018/08/Ben-Chisholm-323569.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Diana Valdez",
+      "text": "Excelente serivicio",
+      "stars": 5,
+      "date": "18/03/2021",
+      "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Georgina Pajares",
+      "text": "Excelente serivicio",
+      "stars": 5,
+      "date": "23/02/2021",
+      "photo": "https://preview.redd.it/37mila7pupb11.jpg?auto=webp&s=b0e79436b38b3dc3629860c40756d0043ec73eeb"
+    },
+    {
+      "id": 4,
+      "name": "Victor Hugo",
+      "text": "Excelente serivicio",
+      "stars": 4,
+      "date": "11/11/2021",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Raul Diaz",
+      "text": "Excelente serivicio",
+      "stars": 4,
+      "date": "24/10/2021",
+      "photo": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+      "id": 6,
+      "name": "Oscar Buendia",
+      "text": "Excelente serivicio",
+      "stars": 5,
+      "date": "30/01/2021",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00mKV1FKKI7Z6H2mr7OqAkaAl_oBi0Y4f3g&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "name": "Daniela Dias",
+      "text": "Excelente serivicio",
+      "stars": 4,
+      "date": "09/09/2021",
+      "photo": "https://i1.sndcdn.com/avatars-000339084123-nag0p1-t500x500.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Cristopher Alonso",
+      "text": "Excelente serivicio",
+      "stars": 5,
+      "date": "22/07/2021",
+      "photo": "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "title": "Register",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "/assets/img/register.jpg",
+      "path": "/admin-register"
+    },
+    {
+      "id": 2,
+      "title": "Rooms",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "require('@/assets/img/rooms.jpg')",
+      "path": "/admin-rooms"
+    },
+    {
+      "id": 3,
+      "title": "Inventory",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "require('@/assets/img/inventory.png')",
+      "path": "/admin-inventory"
+    },
+    {
+      "id": 4,
+      "title": "Client",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "require('@/assets/img/client.jpg')",
+      "path": "/admin-client"
+    },
+    {
+      "id": 5,
+      "title": "Schedule",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "require('@/assets/img/schedule.jpg')",
+      "path": "/admin-schedule"
+    },
+    {
+      "id": 6,
+      "title": "Staff",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "require('@/assets/img/staff.jpg')",
+      "path": "/admin-staff"
+    },
+    {
+      "id": 7,
+      "title": "Costs",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "require('@/assets/img/costs.jpg')",
+      "path": "/admin-costs"
+    },
+    {
+      "id": 8,
+      "title": "Feedback",
+      "color": "rgba(63, 103, 250, 1)",
+      "src": "require('@/assets/img/feedback.jpg')",
+      "path": "/admin-feedback"
+    },
+    {
+      "id": 9,
+      "title": "Publicity",
+      "color": "rgba(63, 103, 250, 0.3)",
+      "src": "require('@/assets/img/publicity.jpg')",
+      "path": "/admin-publicity"
+    }
   ]
 }

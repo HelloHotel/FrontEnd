@@ -29,13 +29,14 @@
         <span class="display-1">HELLO HOTEL</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn plain to="/client-search" color="white">
-        Search
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+
       <v-btn plain to="/client" color="black">
         Client
         <v-icon>mdi-home</v-icon>
+      </v-btn>
+      <v-btn plain to="/client-search" color="white">
+        Search
+        <v-icon>mdi-magnify</v-icon>
       </v-btn>
       <v-btn plain to="/Home_App" color="white">
         Account

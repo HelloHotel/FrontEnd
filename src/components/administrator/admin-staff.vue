@@ -190,6 +190,15 @@
           >
             mdi-delete
           </v-icon>
+          <v-btn :to="{name:'schedule-by-person', params:{id:employees.indexOf(item)}}">
+            <v-icon
+                small
+
+            >
+              mdi-calendar
+            </v-icon>
+          </v-btn>
+
         </template>
         <template v-slot:no-data>
           <v-btn

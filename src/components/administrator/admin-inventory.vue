@@ -45,8 +45,8 @@
     </v-app-bar>
     <!-- Main-->
     <h1>Inventory</h1>
-    <v-col md="6">
-      <v-toolbar flat width="900">
+    <v-col>
+      <v-toolbar flat width="600">
         <v-text-field v-model="title" append-icon="mdi-magnify"
                       label="Name or Code"
                       single-line hide-details

@@ -222,12 +222,12 @@
                   >
                     Edit
                   </v-btn>
-                  <!--<v-btn
+                  <v-btn
                        text v-else
                       @click.prevent="updateEvent(selectedEvent)"
                   >
                     Save
-                  </v-btn>-->
+                  </v-btn>
                 </v-card-actions>
               </v-card>
             </v-menu>
@@ -268,6 +268,7 @@ export default {
       day: 'Day',
       '4day': '4 Days',
     },
+    id:null,
     name:null,
     details: null,
     start:null,
@@ -276,6 +277,7 @@ export default {
     dialog:false,
     dialogDate:false,
     currentlyEditing:null,
+    currentlyDeleting:null,
     selectedEvent: {},
     selectedElement: null,
     selectedOpen: false,
@@ -310,6 +312,7 @@ export default {
     showEvent ({ nativeEvent, event }) {
       const open = () => {
         this.selectedEvent = event
+        console.log(event);
         this.selectedElement = nativeEvent.target
         requestAnimationFrame(() => requestAnimationFrame(() => this.selectedOpen = true))
       }
@@ -323,6 +326,32 @@ export default {
 
       nativeEvent.stopPropagation()
     },
+    addEvent(){
+      EventsApiServices.create({
+        name: this.name,
+        details: this.details,
+        start: this.start,
+        end: this.end,
+        color: this.color,
+        timed: true
+      })
+      console.log(this.name);
+    },
+    deleteEvent(event){
+      EventsApiServices.delete(event);
+    },
+    updateEvent(event){
+      event =this.selectedEvent;
+      console.log(event);
+      EventsApiServices.update(this.selectedEvent.id,{
+        name: this.selectedEvent.name,
+        details: this.selectedEvent.details,
+        start: this.selectedEvent.start,
+        end: this.selectedEvent.end,
+        color: this.selectedEvent.color,
+        timed: true
+      })
+    },
     getDisplayEvents(events){
       return{
         name: events.name,
@@ -332,37 +361,68 @@ export default {
       }
     },
     updateRange () {
+      if(!this.$route.params.id) {
+        EventsApiServices.getAll()
+            .then(response => {
 
-     EventsApiServices.getAll()
-          .then(response => {
+              for (let i = 0; i < response.data.length; i++) {
+                const id = response.data[i].id;
+                const name = response.data[i].name;
+                const details = response.data[i].details;
+                const start = new Date(response.data[i].start);
+                const end = new Date(response.data[i].end);
+                const color = response.data[i].color;
+                //const timed= response.data[i].timed
+                this.events.push({
+                  id: id,
+                  name: name,
+                  details: details,
+                  start: start,
+                  end: end,
+                  timed: true,
+                  color: color
+                });
+              }
 
-               for (let i = 0; i < response.data.length; i++) {
-                  const name = response.data[i].name;
-                  const details = response.data[i].details;
-                  const start = new Date(response.data[i].start);
-                  const end = new Date(response.data[i].end);
-                  const color = response.data[i].color;
-                  //const timed= response.data[i].timed
-                  this.events.push({
-                    name:name,
-                    details: details,
-                    start:start,
-                    end:end,
-                    timed: true,
-                    color:color
-                  });
-                }
+              console.log(this.eventsAux);
+              //console.log( response.data[0]);
+            })
+            .catch(e => {
+              console.log(e);
+            });
+        this.events = this.eventsAux;
 
-            console.log(this.eventsAux);
-            //console.log( response.data[0]);
-          })
-          .catch(e => {
-            console.log(e);
-          });
-      this.events = this.eventsAux;
+        console.log(this.events);
+      } else{
+        EventsApiServices.getAll()
+            .then(response => {
 
-      console.log(this.events);
+              for (let i = 0; i < response.data.length &&  response.data[i].staffId === this.$route.params.id; i++) {
+                const id = response.data[i].id;
+                const name = response.data[i].name;
+                const details = response.data[i].details;
+                const start = new Date(response.data[i].start);
+                const end = new Date(response.data[i].end);
+                const color = response.data[i].color;
+                //const timed= response.data[i].timed
+                this.events.push({
+                  id: id,
+                  name: name,
+                  details: details,
+                  start: start,
+                  end: end,
+                  timed: true,
+                  color: color
+                });
+              }
 
+              console.log(this.eventsAux);
+              //console.log( response.data[0]);
+            })
+            .catch(e => {
+              console.log(e);
+            });
+      }
     //  console.log(this.events);
     },
 
