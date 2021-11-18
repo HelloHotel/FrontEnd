@@ -11,7 +11,7 @@
       <v-btn plain to="/home" color="green" class="display-1">Hello Hotel</v-btn>
       <v-spacer></v-spacer>
       <v-btn plain to="/client" color="yellow">Client</v-btn>
-      <v-btn plain to="/administrator" color="blue">Administrator</v-btn>
+      <v-btn plain to="/admin-login" color="blue">Administrator</v-btn>
       <v-btn plain to="/about" color="white">About</v-btn>
 
     </v-app-bar>

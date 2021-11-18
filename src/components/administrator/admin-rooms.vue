@@ -38,8 +38,11 @@
         <v-divider inset vertical class="mx-1"></v-divider>
         <span class="display-1">HELLO HOTEL</span>
       </v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn plain to="/administrator" color="white">Administrator</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn plain to="/administrator" color="white">Administrator</v-btn>
+      <v-btn plain to="/Home_App" color="white">
+        <v-icon>mdi-exit-run</v-icon>
+      </v-btn>
 
       </v-app-bar>
     <!-- Main-->
