@@ -1,6 +1,5 @@
 <template>
   <v-app>
-
     <v-content>
       <v-container>
         <v-row align="center" justify="center">
@@ -274,7 +273,7 @@
                       </v-card-text>
                       <div class="text-center mt-n5">
                         <v-dialog
-                            v-model="dialog"
+                            v-model="dialog_sign_up"
                             persistent
                             max-width="350"
                         >
@@ -292,7 +291,7 @@
                               <v-btn
                                   color="green darken-1"
                                   text
-                                  @click="dialog = false"
+                                  @click="dialog_sign_up = false"
                                   :disabled="loading"
                                   to="/administrator"
                               >
@@ -320,6 +319,7 @@ export default {
   data: () => ({
     log_in: 1,
     dialog: false,
+    dialog_sign_up: false,
     loading: false
   }),
 
