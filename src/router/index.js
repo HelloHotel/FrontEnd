@@ -36,6 +36,11 @@ const routes = [
     name: 'client-account',
     component: () => import('../components/client/client-account')
   },
+  {
+    path: '/client-login',
+    name: 'client-login',
+    component: () => import('../components/client/client-login')
+  },
   // Administrator routes
   {
     path: '/administrator',
