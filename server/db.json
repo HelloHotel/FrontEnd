@@ -1185,8 +1185,25 @@
       "end": "2021-10-30",
       "color": "#DAD318",
       "timed": 1000
+    },
+    {
+      "name": "Lunch with the investors",
+      "details": "Meet the investors @ Rosabela restaurant",
+      "start": "2021-11-07",
+      "end": "2021-11-07",
+      "color": "#bbee2f",
+      "timed": true,
+      "id": 8
+    },
+    {
+      "name": "Lunch with the investors",
+      "details": "Meet the investors @ Rosabela restaurant",
+      "start": "2021-11-07",
+      "end": "2021-11-09",
+      "color": "#bbee2f",
+      "timed": true,
+      "id": 9
     }
-
   ],
   "feedbacks": [
     {

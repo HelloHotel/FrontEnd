@@ -1,6 +1,5 @@
 <template>
   <v-app>
-
     <v-app-bar app color="black green--text">
       <v-app-bar-title>
         <!--<span class="display-1">Hello Hotel</span>-->
@@ -10,10 +9,9 @@
       </v-app-bar-title>
       <v-btn plain to="/home" color="green" class="display-1">Hello Hotel</v-btn>
       <v-spacer></v-spacer>
-      <v-btn plain to="/client" color="yellow">Client</v-btn>
-      <v-btn plain to="/administrator" color="blue">Administrator</v-btn>
+      <v-btn plain to="/client-login" color="yellow">Client</v-btn>
+      <v-btn plain to="/admin-login" color="blue">Administrator</v-btn>
       <v-btn plain to="/about" color="white">About</v-btn>
-
     </v-app-bar>
     <v-main>
       <v-content>
@@ -115,12 +113,13 @@
               <v-card-title class="layout justify-center">Plans Hello Hotel</v-card-title>
             </v-col>
             <v-layout>
+              <!--Standard-->
               <v-col md="4">
                 <v-card
                     height="400"
                     color="yellow" rounded
                 >
-                  <v-card-title class="white--text layout justify-center">Standar</v-card-title>
+                  <v-card-title class="white--text layout justify-center">Standard</v-card-title>
                   <v-divider></v-divider>
                   <v-card-actions>
                     <v-btn color="white" class="black--text mx-auto">$ 6/m</v-btn>
@@ -131,11 +130,12 @@
                   <v-card-subtitle class="white--text text-center">1 Email Account</v-card-subtitle>
                   <v-divider inset class="white--text"></v-divider>
                   <v-card-actions>
-                    <v-btn color="white" class="black--text mx-auto">Sign Up Now</v-btn>
+                    <v-btn color="white" class="black--text mx-auto" to="/client-login">Sign Up Now</v-btn>
                   </v-card-actions>
 
                 </v-card>
               </v-col>
+              <!--Administrator-->
               <v-col md="4">
                 <v-card
                     height="450"
@@ -153,11 +153,12 @@
                   <v-card-subtitle class="white--text text-center">24/7 Technical Support</v-card-subtitle>
                   <v-divider inset class="white--text"></v-divider>
                   <v-card-actions>
-                    <v-btn color="white" class="black--text mx-auto">Sign Up Now</v-btn>
+                    <v-btn color="white" class="black--text mx-auto" to="/admin-login">Sign Up Now</v-btn>
                   </v-card-actions>
 
                 </v-card>
               </v-col>
+              <!--Corporative-->
               <v-col md="4">
                 <v-card
                     height="400"
@@ -174,7 +175,7 @@
                   <v-card-subtitle class="white--text text-center">24/7 Technical Support</v-card-subtitle>
                   <v-divider inset class="white--text"></v-divider>
                   <v-card-actions>
-                    <v-btn color="white" class="black--text mx-auto">Sign Up Now</v-btn>
+                    <v-btn color="white" class="black--text mx-auto" to="/admin-login">Sign Up Now</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-col>
